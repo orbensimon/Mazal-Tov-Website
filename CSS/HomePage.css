@@ -5,7 +5,7 @@ nav,header,footer{
 body {
     line-height: 1;
     margin: 0;
-    background-color: white;
+    background-color: black;
 }
 /*Navbar*/
 nav{
@@ -13,7 +13,7 @@ nav{
     margin: 0;
 }
     nav ul {
-        background-color: #ffe6f2;
+        background-color: #ffe6ee;
         overflow: hidden;
         margin: 0;
         padding: 0;
@@ -50,7 +50,7 @@ ul.topnav li.drop-list{
 div.mainP {
     width: 50%;
     background-color: white;
-    border: 1px solid black;
+    border: 2px solid white;
     padding: 12px;
     margin-left: auto;
     margin-right: auto;
@@ -121,16 +121,61 @@ div.row::after{
 *{
     box-sizing:border-box;
 }
+#c1 {
+    background-color: #ffff00;
+}
+#c2 {
+    background-color: #00a3cc;
+}
+#c3 {
+    background-color: #c6538c;
+}
 [class*="col-"]{
     border: 2px double black;
     margin-left: 20px;
-    background-color:darksalmon;
 }
 p.p2{
     font-size: 1.5vw;
     text-align: center;
     top:50%;
     text-transform:uppercase;
+}
+hr{
+    width:90%;
+    border: 2px solid white;
+}
+input[type="text"]{
+    display: block;
+    width:40%;
+    margin-top: 15px;
+    border-radius: 6px;
+    padding: 2px;
+
+}
+input[type="text"]:focus{
+    border: 1px solid blue;
+}
+input[type="button"]{
+    margin-top: 15px;
+    border-radius: 6px;
+    padding: 2px;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+}
+.formcontainer {
+    color: white;
+    font-size: 1.5vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.formh1s {
+    font-size: 3.5vw;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 /*Mobile*/
 @media screen and (max-width: 680px) {
@@ -164,4 +209,11 @@ p.p2{
     ul.topnav.responsive li#right-border a{
         border: none;
     }
+    .formrow {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 }
