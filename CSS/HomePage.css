@@ -162,16 +162,9 @@ input[type="button"]{
 input[type="button"]:hover{
     cursor: pointer;
 }
-.formcontainer {
+.formcontainer, .formh1s {
     color: white;
-    font-size: 1.5vw;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-.formh1s {
-    font-size: 3.5vw;
-    color: white;
+    font-size: 40px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -225,6 +218,9 @@ input[type="button"]:hover{
         margin-top: 10px;
         width: 100%;
         margin-left:0;
+    }
+    .formcontainer, .formh1s{
+        font-size: 28px;
     }
 
 

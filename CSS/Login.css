@@ -54,9 +54,96 @@ ul.topnav li a:hover {
 ul.topnav li.drop-list {
     display: none;
 }
-/*Mobile*/
-@media screen and (max-width: 680px) {
-    ul.topnav li {
+/*Row*/
+.row{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+.row::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+/*Column*/
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+div.col-6 div.login-signup-form {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+}
+div.col-6 div.login-signup-form h1 {
+    color: white;
+    font-size: 40px;
+}
+div.login-signup-form div.formcontainer input{
+    display: block;
+    padding: 5px;
+    margin: 20px auto;
+}
+    div.login-signup-form div.formcontainer input:focus{
+        border: 3px solid blue;
+    }
+    div.login-signup-form div.formcontainer input[type="button"] {
+        cursor: pointer;
+        padding: 4px 35px;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: white;
+        transition-duration: 0.4s;
+    }
+        div.login-signup-form div.formcontainer input[type="button"]:hover {
+            background-color: #008CBA;
+        }
+    /*Mobile*/
+    @media screen and (max-width: 680px) {
+        ul.topnav li {
         display: none;
     }
 
@@ -92,4 +179,17 @@ ul.topnav li.drop-list {
             ul.topnav.responsive li#right-border a {
                 border: none;
             }
+            div.row.responsive-row{
+                flex-direction: column;
+                justify-content: center;
+                justify-items: center;
+                width: 100%;
+            }
+            div.col-6{
+                display: block;
+                margin: auto;
+            }
+        div.col-6 div.login-signup-form h1{
+            font-size: 28px;
+        }
 }
